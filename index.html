@@ -4,27 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>figma.com</title>
+    <title>barkinghampalace.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/boosted@5.3.3/dist/css/orange-helvetica.min.css" rel="stylesheet" integrity="sha384-A0Qk1uKfS1i83/YuU13i2nx5pk79PkIfNFOVzTcjCMPGKIDj9Lqx9lJmV7cdBVQZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/boosted@5.3.3/dist/css/boosted.min.css" rel="stylesheet" integrity="sha384-laZ3JUZ5Ln2YqhfBvadDpNyBo7w5qmWaRnnXuRwNhJeTEFuSdGbzl4ZGHAEnTozR" crossorigin="anonymous">
     <link rel="stylesheet" href="screen.css">
   </head>
   <body>
-    <h1 id = "hero">Name</h1>
-
-    <h1 id = "intro">Name is a UX Designer with a passion for large text and small file sizes.</h1>
-
-    <div class ="card">
-      <img 
-      src="figma-comp.png" 
-      alt="Image of website"
-      width="360"
-      height="256"
-      >
-      <div>
-        <h2>Level 2 Heading</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>  
+    <nav class="navbar navbar-expand-lg supra" data-bs-theme="light" aria-label="Supra navigation - With an additional languages navbar example">
+        <a class="stretched-link" href="#">
+          <img src="paw.svg" width="35" height="35" alt="paw print" loading="lazy">
+        </a>
+      <div class="container-xxl">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Locations</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Fees</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Events</a></li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
       </div>
-     </div>
-    
-    <script src="index.js"></script>
+    </nav>
+
+    <div class="parent" style="position: relative;">
+      <img src="banner_image.jpg" alt="two dogs lying in the grass" class="position-relative top-0 start-50 translate-middle-x rounded-5" width="95%" height="auto">
+      <div class="display-1 text-white position-absolute top-50 start-0 translate-middle-y ms-5">Frequently Asked Questions</div>
+    </div>  
+
+      <div class="parent" style="position: relative; margin-left:20%; margin-right: 20%;">
+        <h2 class="text-center my-5">Pup-ular Questions</h2>
+        <div class="container text-left">
+          <div class="row mb-3">
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#questionOne" aria-expanded="false" aria-controls="questionOne">
+              Does every dog that enters the park need to be spayed/neutered?
+            </button>
+          <div class="collapse" id="questionOne">
+            <div class="card card-body">
+              All dogs 8 months of age and older must be spayed/neutered even if you are just visiting for the day.
+            </div>
+          </div>
+          </div>
+          <div class="row mb-3">
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#questionTwo" aria-expanded="false" aria-controls="questionTwo">
+              What are the vaccination requirements?
+            </button>
+          <div class="collapse" id="questionTwo">
+            <div class="card card-body">
+              All dogs must be current on DHPP, Bordetella, Rabies and Leptospirosis within 48 hours of visitation. You must provide documentation for all vaccinations to be admitted into the park.
+            </div>
+          </div>
+          </div>
+          <div class="row mb-3">
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#questionThree" aria-expanded="false" aria-controls="questionThree">
+              If my dog gets kicked out due to behavioral issues can I get refund?
+            </button>
+          <div class="collapse" id="questionThree">
+            <div class="card card-body">
+              No. Safety is our top concern. If there’s any doubt about your dog’s sociability, we suggest exploring the many local parks first until you’re confident in your pet’s friendliness.
+            </div>
+          </div>
+          </div>
+          <div class="row mb-3">
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#questionFour" aria-expanded="false" aria-controls="questionFour">
+              Are children allowed?
+            </button>
+          <div class="collapse" id="questionFour">
+            <div class="card card-body">
+              Children are welcome, but please note that as an off-leash dog park, constant adult supervision is required. To ensure safety and harmony, children should refrain from running, yelling, or interfering with the dogs’ play.
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-5"></div>
+      <div class="row my-5"></div>
+      <div class="row my-5"></div>
+      <div class="row my-5"></div>
+      <div class="row my-5"></div>
+      
+      <footer class="footer navbar" data-bs-theme="light">
+        <h2 class="visually-hidden">Sitemap & information</h2>
+        <div class="container-xxl footer-title-content">
+          <h3 class="footer-heading">Sign up to our mailing list</h3>
+          <div class="row">
+            <form class="d-flex col-12 col-md-9 col-lg-7 col-xl-6 col-xxl-5 gap-2 gap-md-3">
+              <label for="inputEmail" class="visually-hidden">Email</label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email">
+              <button type="submit" class="btn btn-outline-secondary text-nowrap">Sign up</button>
+            </form>
+          </div>
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/boosted@5.3.3/dist/js/boosted.bundle.min.js" integrity="sha384-3RoJImQ+Yz4jAyP6xW29kJhqJOE3rdjuu9wkNycjCuDnGAtC/crm79mLcwj1w2o/" crossorigin="anonymous"></script>
   </body>
 </html>
